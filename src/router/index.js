@@ -1,11 +1,11 @@
-import Vue from 'vue';
-import VueRouter from './index';
+import App from 'vue';
+import VueRouter from 'vue-router';
 import HomeVue from '@/views/Home.vue';
 import AboutVue from '@/views/About.vue';
 import ProjectsVue from '@/views/Projects.vue';
 import ContactVue from '@/views/Contact.vue';
 
-Vue.use(VueRouter);
+App.use(VueRouter);
 
 const routes = [
   { path: '/', component: HomeVue },
