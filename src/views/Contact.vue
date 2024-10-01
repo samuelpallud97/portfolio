@@ -53,8 +53,15 @@
   form input,
   form textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
+    }
+
+  button {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #050A30;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    }
   </style>
   

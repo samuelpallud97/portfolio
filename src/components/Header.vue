@@ -18,22 +18,41 @@
   </script>
   
   <style scoped>
+  
+
  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #0F0200;
-    color: #FDC4BB;
+    background: #050A30;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
   }
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  nav a {
-    color:#FDC4BB;
+
+  nav ul li a {
+    color: white;
     text-decoration: none;
   }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+  }
+  nav ul li {
+    margin-left: 20px;
+  }
+  nav ul li:first-child {
+   margin-right: auto;
+  }
+
+  nav ul li:hover {
+    color: #E7191F;
+    transform: scale(1.12);
+  }
+
+
+
   </style>
   
