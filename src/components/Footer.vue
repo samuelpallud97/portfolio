@@ -19,6 +19,8 @@
     position: absolute;
     width: 100%;
     bottom: 0;
+    font-family: 'Saira-Stencil';
+    font-size: 1.5em;
   }
   </style>
   

@@ -1,8 +1,8 @@
 <template>
     <div class="container">
-      <h2>Home Page</h2>
+      <h2>Home</h2>
       <p>Welcome to my portfolio website.</p>
-      <img src="../assets/SP WEB.jpg" alt="SP WEB Logo">
+      <img src="../assets/Logos/SP WEB.jpg" alt="SP WEB Logo">
     </div>
   </template>
   
@@ -22,13 +22,13 @@
     text-align: center;
     padding-top: 20px;
     color: #050A30;
-    font-family:qqqq
   }
   
   img {
     margin: auto;
     width: 70vh;
     height: auto;
+    object-fit: cover;
   }
   </style>
   

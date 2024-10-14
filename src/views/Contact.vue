@@ -3,16 +3,16 @@
       <h2>Contact</h2>
       <form @submit.prevent="submitForm">
         <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" v-model="form.name">
+          <label for="name">Full name:</label>
+          <input type="text" id="Full name" v-model="form.name" placeholder="Full name">
         </div>
         <div>
           <label for="email">Email:</label>
-          <input type="email" id="email" v-model="form.email">
+          <input type="email" id="email" v-model="form.email" placeholder="Email">
         </div>
         <div>
           <label for="message">Message:</label>
-          <textarea id="message" v-model="form.message"></textarea>
+          <textarea id="message" v-model="form.message" placeholder="Message"></textarea>
         </div>
         <button type="submit">Send</button>
       </form>
@@ -27,7 +27,8 @@
         form: {
           name: '',
           email: '',
-          message: ''
+          message: '',
+          // confirmationMessage: ''
         }
       };
     },
@@ -39,7 +40,6 @@
     }
   };
   </script>
-  
   <style scoped>
   form div {
     margin-bottom: 20px;
@@ -62,6 +62,8 @@
     color: white;
     border-radius: 50px;
     border: none;
+    cursor: pointer;
     }
+
   </style>
   

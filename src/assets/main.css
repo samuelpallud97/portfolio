@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Saira-Stencil';
+    src: url(./Fonts/Saira_Stencil_One/SairaStencilOne-Regular.ttf);
+    src: url(./Fonts/Saira_Stencil_One/SairaStencilOne-Regular.woff);
+}
+
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url(./Fonts/Oswald/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url(./Fonts/Oswald/Oswald-Regular.ttf);
+}

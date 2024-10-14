@@ -18,16 +18,15 @@
   </script>
   
   <style scoped>
-  
 
  header {
     background: #050A30;
-    margin-bottom: 50px;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
-    bottom: 0;
+    font-family: 'Saira-Stencil';
+    font-size: 1.5em;
   }
+  
 
   nav ul li a {
     color: white;
@@ -41,7 +40,7 @@
     padding: 0;
   }
   nav ul li {
-    margin-left: 20px;
+    margin-left: 40px;
   }
   nav ul li:first-child {
    margin-right: auto;
