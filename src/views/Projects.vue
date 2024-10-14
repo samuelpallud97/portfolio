@@ -25,6 +25,21 @@
   </script>
   
   <style scoped>
+  h2 {
+    margin: 0;
+    font-size: 2em;
+    color:#050A30;
+    padding-top: 50px;
+    font-family: 'Oswald-Bold';
+    font-size: 1.8em;
+  }
+
+  
+  h3 {
+    padding-top: 20px;
+    font-size: 1.5em;
+  }
+
   ul {
     list-style: none;
     padding: 0;

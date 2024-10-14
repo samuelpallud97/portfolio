@@ -1,8 +1,8 @@
 <template>
     <div class="container">
-      <h2>Home</h2>
-      <p>Welcome to my portfolio website.</p>
+      <!-- <h2>Home</h2> -->
       <img src="../assets/Logos/SP WEB.jpg" alt="SP WEB Logo">
+      <p>Welcome to my portfolio website.</p>
     </div>
   </template>
   
@@ -20,14 +20,14 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
     color: #050A30;
+    font-family: 'Oswald-Regular';
+    font-size: 1.8em;
   }
   
   img {
     margin: auto;
-    width: 70vh;
-    height: auto;
     object-fit: cover;
   }
   </style>

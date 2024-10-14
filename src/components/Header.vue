@@ -24,7 +24,7 @@
     padding: 20px;
     width: 100%;
     font-family: 'Saira-Stencil';
-    font-size: 1.5em;
+    font-size: 2em;
   }
   
 

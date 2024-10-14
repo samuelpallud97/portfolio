@@ -20,7 +20,7 @@
     width: 100%;
     bottom: 0;
     font-family: 'Saira-Stencil';
-    font-size: 1.5em;
+    font-size: 2em;
   }
   </style>
   

@@ -31,11 +31,10 @@ body {
 
 }
 #app {
-  padding-bottom: 50px; /* Height of the footer */
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  position: relative;
-  max-width: 100%;
-  font-family: 'Oswald-Regular', 'sans-serif';
-  font-size: 1.3em;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 </style>

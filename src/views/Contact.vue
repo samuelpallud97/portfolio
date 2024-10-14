@@ -41,8 +41,18 @@
   };
   </script>
   <style scoped>
+    h2 {
+    margin: 0;
+    font-size: 2em;
+    color:#050A30;
+    padding-top: 50px;
+    font-family: 'Oswald-Bold';
+  }
+
   form div {
     margin-bottom: 20px;
+    padding-top: 15px;
+    font-size: 1.5em;
   }
   
   form label {

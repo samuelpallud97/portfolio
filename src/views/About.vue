@@ -27,23 +27,25 @@
     font-size: 2em;
     color:#050A30;
     padding-top: 50px;
+    font-family: 'Oswald-Bold';
   }
   .about-container {
     display: flex;
     justify-content: center;
     align-items: flex-start; 
-    gap: 20px;
+    gap: 60px;
     text-align: left;
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 30px;
-  };
+  }
 
   .about-text {
     flex: 1;
-    max-width: 100px;
-    width: 60%;
+    max-width: 400px;
     color:#050A30;
+    font-size: 1.5em;
+    padding-top: 30px;
   }
 
   img {
@@ -51,6 +53,7 @@
     height: auto;
     object-fit: cover;
     border-radius: 50%;
+    padding-top: 30px;
   }
   </style>
   
