@@ -20,21 +20,18 @@ export default {
 </script>
 
 <style>
-
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
   position: relative;
-
 }
 #app {
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 50px; /* Height of the footer */
   min-height: 100vh;
-  max-width: 100vw;
-  overflow-x: hidden;
+  position: relative;
+  max-width: 100%;
+  font-family: 'Oswald-Regular', 'sans-serif';
 }
 </style>

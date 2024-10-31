@@ -2,7 +2,7 @@ import "../assets/main.css"
 import { createRouter, createWebHistory } from "vue-router";
 import HomeVue from "@/views/Home.vue";
 import AboutVue from "@/views/About.vue";
-import ProjectsVue from "@/views/Projects.vue";
+import ProjectsVue from "@/views/ProjectsSP.vue";
 import ContactVue from "@/views/Contact.vue";
 // import NotFound from "@/views/NotFound.Vue";
 
