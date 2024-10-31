@@ -37,22 +37,23 @@ export default {
     submitForm() {
       console.log('Form data submitted:', this.form);
 
-      // // Simule l'envoi du formulaire en affichant un message de succès
       this.successMessage = "Thanks for your message.";
+      // Simule l'envoi du formulaire en affichant un message de succès
 
-      // Appelle la méthode resetForm pour vider les champs du formulaire
       this.resetForm();
+      // Appelle la méthode resetForm pour vider les champs du formulaire
 
       setTimeout(() => {
         this.successMessage = '';
-      }, 3000);
+      }, 2000); 
+      // Le message reste un court instant puis s'efface
     },
     resetForm() {
-      // Efface les champs du formulaire
       this.form.name = '';
       this.form.email = '';
       this.form.message = '';
     }
+      // Efface les champs du formulaire
   }
 };
 </script>
