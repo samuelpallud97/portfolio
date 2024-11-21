@@ -63,8 +63,8 @@ h2 {
   margin: 0;
   font-size: 1.6em;
   color: #050A30;
-  padding-top: 20px;
-  font-family: 'Oswald-Bold';
+  padding-top: 90px;
+  font-family: 'Ubuntu-Bold';
   text-align: center;
 }
 
@@ -78,7 +78,7 @@ form label {
   display: block;
   margin-bottom: 5px;
   font-size: 1.2em;
-  font-family: 'Oswald-Bold';
+  
   color: #050A30;
 }
 
@@ -98,7 +98,7 @@ button {
   border-radius: 40px;
   border: none;
   cursor: pointer;
-  font-family: 'Oswald-Regular';
+  font-family: 'SairaStencilOne-Regular';
   font-size: 1.1em;
 }
 
@@ -110,7 +110,7 @@ p {
 margin-top: 10px;
 margin-left: 20px;
 color: #78BDC4;
-font-family: 'Oswald-Bold';
+font-family: 'Ubuntu-Regular';
 font-size: 0.9em;
 }
 </style>

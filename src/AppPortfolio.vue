@@ -28,10 +28,10 @@ body {
   position: relative;
 }
 #app {
-  padding-bottom: 50px; /* Height of the footer */
+  padding-bottom: 50px; 
   min-height: 100vh;
   position: relative;
   max-width: 100%;
-  font-family: 'Oswald-Regular', 'sans-serif';
+  font-family: 'Ubuntu-Regular';
 }
 </style>

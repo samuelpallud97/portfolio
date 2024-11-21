@@ -1,77 +1,105 @@
 <template>
   <div class="projects-section">
     <h2 class="projects-title">Projects</h2>
-
     <div class="projects-container">
-      <div v-for="project in projects" :key="project.id" class="project-card" @click="openModal(project)">
+      <div
+        v-for="project in projects"
+        :key="project.id"
+        class="project-card"
+        :style="{ backgroundImage: `url(${project.image})` }"
+        @click="openModal(project)"
+      >
         <h3>{{ project.title }}</h3>
-        <p>{{ project.shortDescription }}</p>
       </div>
     </div>
 
-    <!-- Modal -->
-    <Modal v-if="isModalOpen" :isOpen="isModalOpen" :project="selectedProject" @close="isModalOpen = false" />
+    <!-- Modal d'affichage du projet -->
+    <Modal
+      v-if="isModalOpen"
+      :project="selectedProject"
+      @close="closeModal"
+    /> 
   </div>
 </template>
 
 <script>
-import Modal from './Modal.vue';
+import Modal from './ModalSP.vue';
 
 export default {
   components: {
-    Modal
+    Modal,
   },
   data() {
     return {
       projects: [
-        { id: 1, title: 'Project 1', shortDescription: 'Curriculum Vitae', description: 'Full description of project 1.' },
-        { id: 2, title: 'Project 2', shortDescription: 'Specifications', description: 'Full description of project 2.' },
-        { id: 3, title: 'Project 3', shortDescription: 'Dynamic space comment', description: 'Full description of project 3.' }
+        {
+          id: 1,
+          // title: 'Curriculum Vitae',
+          description: 'Professional resume in HTML and CSS.',
+          image: require('../assets/Images/CV.png'), 
+          githubLink: 'https://github.com/samuelpallud97/CV-Samuel-Pallud-devoir-CEF',
+        },
+        {
+          id: 2,
+          // title: 'Specifications',
+          description: 'Document requirements for an e-commerce business.',
+          image: require('../assets/Images/Specifications.png'),
+          githubLink: 'https://github.com/samuelpallud97/Cahier-des-charges/tree/main',
+        },
+        {
+          id: 3,
+          // title: 'Dynamic space comment',
+          description: 'Create a dynamic comment section with Node.js.',
+          image: require('../assets/Images/Com.png'),
+          githubLink: 'https://github.com/samuelpallud97/Dynamiser-un-espace-commentaire-CEF',
+        },
       ],
       isModalOpen: false,
-      selectedProject: null
+      selectedProject: null,
     };
   },
   methods: {
     openModal(project) {
       this.selectedProject = project;
       this.isModalOpen = true;
-    }
-  }
+    },
+    closeModal() {
+      this.isModalOpen = false;
+    },
+  },
 };
 </script>
 
 <style scoped>
-h2 {
-  margin: 0;
+.projects-title {
+  color: #050A30;
   font-size: 1.6em;
-  color:#050A30;
-  padding-top: 20px;
-  font-family: 'Oswald-Bold';
-  text-align: center
+  padding-top: 70px;
+  text-align: center;
 }
 
 .projects-section {
   text-align: center;
-  padding: 50px;
-}
-
-.projects-title {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #050A30;
 }
 
 .projects-container {
   display: flex;
   justify-content: center;
   gap: 30px;
+  padding-top: 60px;
+  flex-wrap: wrap;
 }
 
 .project-card {
-  background: #f3f3f3;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
   padding: 20px;
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
+  border: 4px solid #050A30; 
   cursor: pointer;
   transition: transform 0.3s ease;
   max-width: 300px;
@@ -79,6 +107,16 @@ h2 {
 }
 
 .project-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
+}
+
+.repo-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 </style>

@@ -13,14 +13,16 @@
   </script>
   
   <style scoped>
+  p {
+    padding-top: 60px;
+    font-size: 1.8em;
+    }
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     color: #050A30;
-    font-family: 'Oswald-Regular';
-    font-size: 1.8em;
     padding-top: 20px;
     }
   
