@@ -1,8 +1,9 @@
 <template>
   <div class="not-found">
-    <h2>Error 404</h2>
+    <!-- <h2>Error 404</h2> -->
     <img src="../assets/Images/erreur-404.png" alt="404 Error" class="not-found-image" />
-    <p>Oops! The page you're looking for doesn't exist.</p>
+    <p>Oops! The page you're trying to access doesn't exist or has been moved.
+      Try returning to our homepage.</p>
     <router-link to="/" class="back-home">Go Back Home</router-link>
   </div>
 </template>
@@ -19,26 +20,27 @@ export default {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 50px;
+  padding: 70px;
 }
 
 .not-found-image {
   max-width: 300px;
   margin-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 h2 {
   font-size: 1.8em;
   color:#050A30;
-  padding-top: 80px;
+  padding-top: 40px;
   font-family: 'Ubuntu-Bold';
 }
 
 p {
   font-size: 1.2em;
   color: #E7191F;
-  font-family: 'Ubuntu-Bold';
+  font-family: 'Ubuntu-Italic';
+  font-weight: bold ;
 }
 
 .back-home {
